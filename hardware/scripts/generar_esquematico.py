@@ -35,7 +35,8 @@ RAIZ = str(uuid.uuid5(NS, "hoja-raiz"))
 
 # Disposición (posiciones, cables, etiquetas y textos) en esquematico_layout.py
 from esquematico_layout import (LAYOUT, CABLES, ETIQUETAS, TEXTOS, CAMPOS,  # noqa: E402
-                                ESPEJO, POTENCIA, PAPEL)
+                                ESPEJO, POTENCIA, PAPEL, BLOQUES, TITULO_GRANDE,
+                                NOTAS_TITULO, NOTAS, CAJETIN)
 
 
 def uid_simbolo(ref):
@@ -205,6 +206,15 @@ def uniones(pines_xy):
     return res
 
 
+def cajetin():
+    """Bloque title_block del cajetín (esquina inferior derecha) a partir de CAJETIN."""
+    s = (f'\t(title_block\n\t\t(title "{CAJETIN["title"]}")\n\t\t(date "{CAJETIN["date"]}")\n'
+         f'\t\t(rev "{CAJETIN["rev"]}")\n\t\t(company "{CAJETIN["company"]}")\n')
+    for n, t in enumerate(CAJETIN["comments"], start=1):
+        s += f'\t\t(comment {n} "{t}")\n'
+    return s + '\t)\n'
+
+
 def main():
     por_ref = {c["ref"]: c for c in COMPONENTES}
     faltan = set(por_ref) - set(LAYOUT)
@@ -266,17 +276,23 @@ def main():
                    f'(effects (font (size 1.27 1.27)) (justify {just} bottom)) (uuid "{u(f"l-{n}-{t}")}"))\n')
     for n, (t, x, y, tam, neg) in enumerate(TEXTOS):
         cuerpo += texto(t, x, y, tam, neg, sem=f"t-{n}")
+    # Recuadros punteados por etapa, con su título
+    for n, (x1, y1, x2, y2, t, tx, ty) in enumerate(BLOQUES):
+        cuerpo += (f'\t(rectangle (start {x1:.2f} {y1:.2f}) (end {x2:.2f} {y2:.2f}) '
+                   f'(stroke (width 0.254) (type dash) (color 0 0 132 1)) (fill (type none)) (uuid "{u(f"b-{n}")}"))\n')
+        cuerpo += texto(t, tx, ty, 1.5, True, sem=f"bt-{n}")
+    # Título grande y notas (posición fija en la hoja)
+    for n, (t, x, y, tam, neg) in enumerate(TITULO_GRANDE):
+        cuerpo += texto(t, x, y, tam, neg, sem=f"tg-{n}")
+    x0, y0 = 17.78, 236.22
+    cuerpo += texto(NOTAS_TITULO, x0, y0, 1.8, True, sem="notas")
+    for n, t in enumerate(NOTAS):
+        cuerpo += texto(t, x0, round(y0 + 5.08 + 3.81 * n, 2), 1.27, False, sem=f"nota-{n}")
 
     sch = (f'(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")\n'
            f'\t(uuid "{RAIZ}")\n'
            f'\t(paper "{PAPEL}")\n'
-           f'\t(title_block\n'
-           f'\t\t(title "Ingenieria inversa - Driver LED Tecnolite 50LHBLEDT65MV200")\n'
-           f'\t\t(date "2026-11-25")\n'
-           f'\t\t(rev "0.5")\n'
-           f'\t\t(comment 1 "PCB original: JT047-V1 (2018-3-19)")\n'
-           f'\t\t(comment 2 "Conexiones: trazado manual del cobre (pcb_tracing/) y mediciones de continuidad")\n'
-           f'\t)\n'
+           + cajetin() +
            f'\t(lib_symbols\n')
     for s, _ in libs.values():
         sch += "\t" + s.replace("\n", "\n\t") + "\n"

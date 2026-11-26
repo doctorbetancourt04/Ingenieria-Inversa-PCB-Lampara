@@ -46,3 +46,5 @@ Pendiente de verificación manual:
 - Los valores marcados con `?` no se leyeron en las fotos.
 - La polaridad de diodos y electrolíticos y el pinout de T1 y U1 son supuestos.
 - Las conexiones del esquemático y el ruteo de pistas se hacen a mano.
+
+- [`manual_maestro_ia_ingenieria_inversa_pcb.md`](manual_maestro_ia_ingenieria_inversa_pcb.md): guía para que otra IA ayude a hacer ingeniería inversa de una PCB de una o dos capas, con lo aprendido en este proyecto.

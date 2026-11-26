@@ -483,6 +483,45 @@ distintos, sin cruces) y dos esquemáticos de referencia.
 
 ---
 
+## Prompt 16 — Un solo circuito, tierras estándar, hoja ordenada y manual maestro
+
+**Fecha:** 2026-11-25
+
+> Creo que todavía hay textos que interfieren con el esquemático. Usa convenciones más estándar para lo de las Tierras. Ya que ambos circuitos caben en una misma hoja, une la etapa del rectificador con la del convertidor DC-DC
+
+Mensajes siguientes en la misma sesión:
+
+> Haz en general que se vea más bonito. Coloca todo el circuito centrado en la hoja. Pon un título grande en la esquina superior izquierda.
+>
+> Rellena el cajetín en la esquina inferior derecha
+>
+> Oye antes de que cerremos sesión. Quisiera que en la bitácora de uso de IA hagas una especie de manual maestro para IAs que les den indicaciones sobre cómo ayudar a alguien a hacer ingeniería inversa de una PCB de una o dos capas. [...] Genera un markdown y súbelo a Github. ¿Qué recomendaciones darías tu para agilizar el proceso en próximas ocasiones?
+>
+> Dime en qué cosas podría haberlas hecho yo mismo y hubiese salido más rápido que con vos
+
+**Resultado (rev 0.6):**
+
+- Un solo circuito: el riel DC+ sale del puente y llega con un cable continuo a C6, VR3,
+  la opción no montada, el arranque (R4–R5) y el drenaje de Q1. Q1 se giró para que el
+  drenaje reciba el riel por la izquierda y la fuente salga por la derecha, con la red
+  de compuerta debajo.
+- Tierras estándar: `power:GND` (= DC− = LED−) y `GND_U1`, la tierra flotante del
+  controlador, con el mismo símbolo y otro nombre. Las etiquetas DC+ y LED+ solo nombran
+  esas redes.
+- Valores estándar: DNP para los no montados y valores sin código de marca (330k, 22,
+  75k...); los códigos quedan en la descripción de cada componente.
+- Recuadros punteados por etapa, título grande arriba a la izquierda, notas numeradas
+  abajo a la izquierda, cajetín completo y circuito centrado automáticamente.
+- Mismas conexiones que la rev 0.5 (netlist comparado); ERC con solo los 4 pines de
+  R2, CE1 y C1, de conexión desconocida.
+- Imagen: `processed_images/16_esquematico_rev0.6.png` / `.pdf`.
+- Se escribió `prompts/manual_maestro_ia_ingenieria_inversa_pcb.md`: guía para otras IAs
+  con el flujo de trabajo, qué pedirle a la persona desde el inicio, los errores que
+  costaron tiempo, recetas de KiCad por línea de comandos y el reparto de tareas entre
+  la persona y la IA.
+
+---
+
 <!-- Para nuevas entradas copiar el formato:
 ## Prompt N — Título
 **Fecha:** AAAA-MM-DD
