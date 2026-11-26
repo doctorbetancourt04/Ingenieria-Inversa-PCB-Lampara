@@ -1,0 +1,8 @@
+# Respaldos y archivos temporales de KiCad
+*-backups/
+*.lck
+fp-info-cache
+~*.lck
+# Archivos generados por los scripts
+hardware/scripts/netlist.net
+__pycache__/

@@ -45,8 +45,9 @@ CONEXIONES_MEDIDAS = [
     ["U1.4", "R9.1", "R11.2"],        # pin 4 (medido 1): R9 y R11        -> FB
     ["U1.5", "R10.1"],                # pin 5 (medido 2): R10             -> CS
     ["U1.6", "R12.2", "R9.2", "C4.2"],  # pin 6 (medido 3): R12, nodo R9/C4
-    ["U1.1", "C2.1", "R6.2", "CE2.2"],  # pin 1 (medido 4): C2, R6, CE2 (+) -> VCC
-    ["U1.2", "CE2.1", "R8.1"],        # pin 2 (medido 5): CE2 (-), R8      -> GND del CI
+    # CE2: pad 1 (+ del footprint) es la pata física que va a VCC
+    ["U1.1", "C2.1", "R6.2", "CE2.1"],  # pin 1 (medido 4): C2, R6, CE2 (+) -> VCC
+    ["U1.2", "CE2.2", "R8.1"],        # pin 2 (medido 5): CE2 (-), R8      -> GND del CI
     ["U1.3", "R7.1"],                 # pin 3 (medido 6): R7               -> GATE
     # Q1: la pata hacia las pestañas tiene continuidad con T1 (a través de R12, 0 ohm)
     ["Q1.3", "R12.2"],

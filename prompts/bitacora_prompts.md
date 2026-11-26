@@ -340,6 +340,149 @@ identificación visual.
 
 ---
 
+## Prompt 11 — Esquemático con cables por etapas
+
+**Fecha:** 2026-11-25
+
+> Va mira antes de hacer eso. Quisiera que refinés el esquemático. Siento que no se entiende nada si conectas todo por etiquetas. Necesito que conectes los componentes con cables en el esquemático. Separa por etapas si quieres (filtro LC de entrada y rectificador, convertidor DC-DC)
+
+Junto con el prompt adjunté dos imágenes de referencia: un diagrama de bloques de una
+fuente flyback para LEDs y un esquemático simple de un puente rectificador con filtro.
+
+**Resultado:**
+
+- Corrección encontrada en el proceso: en la PCB estaban invertidas las redes de los
+  pines de CE2 (el pad "+" del footprint quedaba en GND). Se corrigió.
+- El esquemático se redibujó con cables reales, en tres etapas que fluyen de izquierda
+  a derecha:
+  - **A.** Entrada AC → R1/F1 → VR1, VR2, CX1, LF1 → puente D1–D4 dibujado en
+    escalera → rieles DC+/DC− con C6 y VR3.
+  - **B.** Arranque R4–R5, amortiguador (no montado), red de compuerta R7/D6/R8, Q1,
+    R12, T1, devanado auxiliar D7/R6, RS1–RS4 y controlador U1 con su desacople, FB y
+    filtro de CS.
+  - **C.** CE3, CE4, R14, R15, D8 con su RC, y J1.
+- Solo se usan etiquetas para unir etapas (DC±, LED±) y para las señales de U1.
+- Las posiciones y cables están en `hardware/scripts/esquematico_layout.py`. El
+  generador parte los cables en cada derivación en T (KiCad solo conecta por
+  extremos) y agrega los puntos de unión.
+- `verificar_esquematico.py` compara el netlist del esquemático con las redes de la
+  PCB pin por pin: coinciden al 100%. Paridad esquemático–PCB: 0 problemas. ERC:
+  solo los 7 pines sin conexión conocida.
+
+---
+
+## Prompt 12 — Esquemático preliminar del convertidor DC-DC
+
+**Fecha:** 2026-11-25
+
+> Claude ayudame a hacer un esquemático preliminar de la etapa del convertidor DC-DC
+
+**Resultado:** La IA preguntó cómo tratar las conexiones aún no medidas (drenaje de Q1,
+RS1–RS4, ánodo de D8, R11, C2). En lugar de responder, se pidió el mapa de colores
+(prompt 13).
+
+---
+
+## Prompt 13 — Mapa de conexiones por color
+
+**Fecha:** 2026-11-25
+
+> Dame una imagen mostrando las conexiones con colores distintos.
+
+**Resultado:** `hardware/scripts/colorear_redes.py` genera
+`processed_images/15_mapa_de_redes_por_color.png`:
+
+- La cara inferior se ve con el cuello abajo y cada isla de cobre va pintada con el
+  color de su red (27 redes de 2 o más pads).
+- Los pads de conexión desconocida aparecen en gris.
+- Las líneas punteadas marcan las conexiones medidas que en la foto no se ven como
+  cobre continuo.
+- Una leyenda lista los pads de cada red.
+
+---
+
+## Prompt 14 — Esquemático del rectificador y del convertidor DC-DC (rev 0.4)
+
+**Fecha:** 2026-11-25
+
+> Revisa la carpeta pcb_tracing. Aquí puse las conexiones que encontré en la etapa del rectificador y una imagen donde coloreé una imagen de la bottom layer de la PCB en la parte del convertidor DC-DC. Intenta elaborar el esquemático de KiCad de ambos, tomando la imagen del rectificador que tomé como base. Quiero que utilices etiquetas únicamente cuando termine la etapa rectificadora y empiece la etapa del convertidor DC-DC
+>
+> Dado que no sabemos nada sobre el integrado debajo del MOSFET, intenta conectar los elementos del circuito como en un convertidor flyback (por el número de MOSFETs y devanados de transformador). Verifica que sea posible lograr un esquemático como los mostrados arriba. [...]
+
+Durante el prompt se agregaron: la red de compuerta (R7 en paralelo con D6 para apagar
+rápido), fotos de los componentes THT (`images/`), el trazado con símbolos de
+componentes (`pcb_tracing/pcb_tracing_con_componentes.pdf/.svg`) y el dato de que T1
+tiene un devanado entre el trazo blanco (LED+) y el amarillo claro (lado de RS1–RS4).
+
+**Resultado:**
+
+- Las coordenadas de cada trazo se leyeron directamente del SVG de Inkscape y se
+  ubicaron sobre la foto con los puntos TA–TD, QS/QD/QG, etc.
+- **Conclusión sobre la topología:** con las conexiones trazadas el circuito **no puede
+  ser un flyback**: el drenaje de Q1 va directo a DC+, LED− está unido a DC−
+  (no hay aislamiento) y T1 tiene un solo devanado de potencia (TC–TD, en serie con la
+  carga) más uno auxiliar (TA–TB). Las conexiones corresponden a un **reductor (buck)
+  no aislado con el MOSFET del lado alto y el controlador flotante**: la tierra de U1 es
+  la fuente de Q1, RS1–RS4 (0.31 Ω) sensan la corriente del inductor, D8 es el diodo de
+  rueda libre (ánodo en DC−) y el devanado auxiliar alimenta VDD (D7, R6) y da la
+  realimentación FB (divisor R11 / R9). El CI sigue siendo compatible con un
+  controlador PWM tipo flyback/PSR.
+- Pinout de U1 por función: 1 VDD, 2 GND, 3 GATE, 4 FB, 5 COMP (R10 + C4 a GND),
+  6 CS (por R12 = 0 Ω). No se encontró un modelo comercial confirmado con la marca
+  H0TN: el símbolo `Lampara:IC_SOT-23-6` usa nombres de pin por función.
+- Nuevo símbolo `Lampara:T1_EE_2dev` de dos unidades: T1A (devanado principal) y T1B
+  (devanado auxiliar), para dibujar el auxiliar junto al controlador.
+- Valores tomados de las fotos: Q1 FIR12N65F, C6 CBB 630 V 334J (330 nF), VR1 y VR3
+  10D561K, CE2 10 µF 50 V, CE3/CE4 270 µF 100 V, D1–D4 S2M. Se quitaron todos los "?".
+- Esquemático rev 0.4 (`esquematico_layout.py`): todo cableado; las únicas etiquetas
+  son DC+ y DC− entre el rectificador y el convertidor. Quedan tres cruces de cables
+  sin conexión, inevitables sin etiquetas (la rev 0.5 los elimina, ver prompt 15).
+- Respaldo de la rev 0.3 en `KiCad_IngenieriaInversaLampara-backups/`.
+- Diferencias con las redes de la PCB (`verificar_esquematico.py`): Q1.D en DC+;
+  LED− = DC− (incluye T1 pin 2); la tierra del CI incluye la fuente de Q1, un lado de
+  RS1–RS4, R9, C2, C4, D8 y R13; el otro lado de RS1–RS4 va a T1 pin 3 y R12; D7 y D8
+  quedan con la polaridad funcional (ánodo de D7 en TA, ánodo de D8 en DC−), opuesta a
+  la que se supuso en sus footprints. La PCB todavía no se actualizó.
+
+**Pendiente de medir:** continuidad L− – DC− y QD – DC+ (después de resoldar Q1),
+polaridad de D7 y D8, y que TB (T1 pin 2) esté en DC−.
+
+---
+
+## Prompt 15 — Estética del esquemático (rev 0.5) y subida a GitHub
+
+**Fecha:** 2026-11-25
+
+> Muy buen trabajo. La verdad tu argumento me parece muy convincente. Gracias por no ser tan complaciente con mi idea original. Por favor coloca estos avances en la bitácora de uso de IA y pushea en Github, indicando los avances.
+>
+> Lo que sí quisiera es que mejores un poco la estética del esquemático. Siento que tienes muy saturado el esquemático del convertidor buck boost. Por favor toma las siguientes consideraciones estéticas [...] También quisiera que en los pines de entrada y salida de voltaje no des vueltas. Me gustaría que el tamaño de la hoja sea más adecuado a la cantidad de componentes presentes. Quisiera que evites las conexiones cruzadas tanto como sea posible. [...] También quisiera que las etiquetas del integrado U1 no aparezcan tan pegadas entre sí. Haz el bloque más grande.
+
+Junto con el prompt se adjuntaron una guía de buenas prácticas para esquemáticos de
+fuentes (flujo izquierda-derecha y de mayor a menor tensión, bloques por etapa, símbolos
+de alimentación y de tierra en vez de cables largos, tierras distintas con nombres
+distintos, sin cruces) y dos esquemáticos de referencia.
+
+**Resultado (rev 0.5):**
+
+- Hoja A3 en lugar de A2.
+- Rieles con símbolos de alimentación propios (`Lampara.kicad_sym`): `DC+`, `DC-`
+  (triángulo lleno, = LED−) y `GND_SW` (triángulo hueco): la tierra flotante del
+  controlador, que es la fuente de Q1. Además `VDD` (de la librería de KiCad) y
+  banderas PWR_FLAG para el ERC. Ya no hacen falta etiquetas.
+- **Cero cruces de cables.** La etapa de potencia va arriba
+  (Q1 → nodo de conmutación → RS1–RS4 → T1A → LEDs) y el control de U1 abajo.
+- P1 y J1 están espejados para que sus pines entren directo a las líneas, sin vueltas.
+- U1 más grande (20 × 15 mm) con los pines a 5 mm: VDD y FB a la izquierda, GATE
+  arriba (hacia Q1), CS a la derecha (hacia RS) y GND y COMP abajo.
+- Textos sin encimarse: valores cortos para RS1–RS4 (1.2 / 1.3) y para C6
+  (330nF 630V; la marca CBB 334J queda en la descripción), y posiciones fijas para
+  los textos de U1, D8, J1, T1B, R4 y R5.
+- Las redes son idénticas a las de la rev 0.4 (comparado con el netlist). ERC: solo
+  los 4 pines de R2, CE1 y C1, que no están montados y cuya conexión no se conoce.
+- Imagen: `processed_images/16_esquematico_rev0.5.png` / `.pdf`.
+
+---
+
 <!-- Para nuevas entradas copiar el formato:
 ## Prompt N — Título
 **Fecha:** AAAA-MM-DD
