@@ -1,0 +1,3209 @@
+(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
+	(uuid "5310957d-6bba-5a90-941c-aee73197b857")
+	(paper "A2")
+	(title_block
+		(title "Ingenieria inversa - Driver LED Tecnolite 50LHBLEDT65MV200")
+		(date "2026-11-25")
+		(rev "0.2")
+		(comment 1 "PCB original: JT047-V1 (2018-3-19)")
+		(comment 2 "Conexiones reconstruidas del cobre (fotos) y mediciones de continuidad")
+	)
+	(lib_symbols
+	(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:Varistor"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor"
+				(at -3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage dependent resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Varistor_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:L_Ferrite_Coupled"
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L_Ferrite_Coupled"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Coupled inductor with ferrite core"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic coupled"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_Ferrite_Coupled_0_1"
+				(circle
+					(center -3.048 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -3.048 1.524)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -2.54 2.032)
+					(mid -2.032 1.5262)
+					(end -1.524 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -2.032)
+					(mid -2.032 -1.5262)
+					(end -2.54 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 2.032)
+					(mid -1.016 1.5262)
+					(end -0.508 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 -2.032)
+					(mid -1.016 -1.5262)
+					(end -1.524 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 2.032)
+					(mid 0 1.5262)
+					(end 0.508 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 -0.508) (xy -2.286 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 0.508) (xy -2.286 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.032) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.032) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.508) (xy -1.27 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.27 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.508) (xy -0.254 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.508) (xy -0.254 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.508) (xy 0.762 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.508) (xy 1.778 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 1.778 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -0.508) (xy 2.794 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0.508) (xy 2.794 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.032) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -2.032)
+					(mid 0 -1.5262)
+					(end -0.508 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 2.032)
+					(mid 1.016 1.5262)
+					(end 1.524 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -2.032)
+					(mid 1.016 -1.5262)
+					(end 0.508 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 2.032)
+					(mid 2.032 1.5262)
+					(end 2.54 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 -2.032)
+					(mid 2.032 -1.5262)
+					(end 1.524 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Ferrite_Coupled_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:L"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 -2.54)
+					(mid 0.6323 -1.905)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 0.635)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 1.905)
+					(end 0 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:D"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:Transformer_1P_1S"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "T"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Transformer_1P_1S"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Transformer, single primary, single secondary"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transformer coil magnet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Transformer_1P_1S_0_1"
+				(arc
+					(start -2.54 -5.0546)
+					(mid -1.6599 -4.6901)
+					(end -1.27 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 -2.5146)
+					(mid -1.6599 -2.1501)
+					(end -1.27 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0.0254)
+					(mid -1.6599 0.3899)
+					(end -1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.5654)
+					(mid -1.6599 2.9299)
+					(end -1.27 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 -3.81)
+					(mid -1.642 -2.912)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 -1.27)
+					(mid -1.642 -0.372)
+					(end -2.54 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 1.27)
+					(mid -1.642 2.168)
+					(end -2.54 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 3.81)
+					(mid -1.642 4.708)
+					(end -2.54 5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 5.08) (xy -0.635 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -5.08) (xy 0.635 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2954 -1.27)
+					(mid 1.6599 -2.1501)
+					(end 2.54 -2.5146)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2954 1.27)
+					(mid 1.6599 0.3899)
+					(end 2.54 0.0254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2954 3.81)
+					(mid 1.6599 2.9299)
+					(end 2.54 2.5654)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.3208 -3.81)
+					(mid 1.6853 -4.6901)
+					(end 2.5654 -5.0546)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 1.642 -0.372)
+					(end 1.2954 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 2.54)
+					(mid 1.642 2.168)
+					(end 1.2954 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 5.08)
+					(mid 1.642 4.708)
+					(end 1.2954 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.5654 -2.54)
+					(mid 1.6674 -2.912)
+					(end 1.3208 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Transformer_1P_1S_1_1"
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 7.62)
+					(name "AA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 7.62)
+					(name "AB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 7.62)
+					(name "SA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 7.62)
+					(name "SB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Device:Q_NMOS_GDS"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NMOS_GDS"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, gate/drain/source"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NMOS_GDS_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GDS_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	(symbol "Lampara:IC_SOT-23-6" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "U" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "IC_SOT-23-6" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Controlador flyback en SOT-23-6, marca H0TN / 9L99 (fabricante no identificado). Funciones de pin deducidas por continuidad" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "IC_SOT-23-6_0_1"
+				(rectangle (start -7.62 6.35) (end 7.62 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "IC_SOT-23-6_1_1"
+				(pin passive line (at -10.16 2.54 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -10.16 0 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin output line (at -10.16 -2.54 0) (length 2.54) (name "GATE" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin input line (at 10.16 -2.54 180) (length 2.54) (name "FB" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin input line (at 10.16 0 180) (length 2.54) (name "CS" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 10.16 2.54 180) (length 2.54) (name "?" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			)
+		)
+	)
+	(text "Entrada AC y filtro EMI" (exclude_from_sim no) (at 35.56 43.18 0) (effects (font (size 2.0 2.0) (bold yes)) (justify left bottom)) (uuid "8d944110-68d2-5351-8ad2-648954104970"))
+	(symbol (lib_id "Connector_Generic:Conn_01x02") (at 45.72 63.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9171d6b9-c16d-5f0c-b818-0f6db6e10d7f")
+		(property "Reference" "P1" (at 45.72 59.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "AC 120V (L, N)" (at 45.72 69.85 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Lampara:P1_Entrada_AC_Cables" (at 45.72 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Cables de entrada de línea (pad 1 = L, pad 2 = N)" (at 45.72 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 45.72 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "dc36fcdc-25bd-57c3-8737-f9bbe885ef5e"))
+		(pin "2" (uuid "ea689f2c-3dcf-5bdd-b3cb-f9e1daaf533b"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "P1") (unit 1))))
+	)
+	(wire (pts (xy 40.64 63.50) (xy 38.10 63.50)) (stroke (width 0) (type default)) (uuid "d427866f-d98a-515f-a49b-e2dad0f94ae3"))
+	(label "AC_L_ENTRADA" (at 38.10 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9fdeaf32-3214-56d8-99c5-e87e38591b0c"))
+	(wire (pts (xy 40.64 66.04) (xy 38.10 66.04)) (stroke (width 0) (type default)) (uuid "493678ee-ee00-5dc7-9110-6d3e231b5172"))
+	(label "AC_N_ENTRADA" (at 38.10 66.04 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d88b93ee-e655-53e0-947e-d057fc27433f"))
+	(symbol (lib_id "Device:Fuse") (at 96.52 63.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "69de5d05-462b-56df-b132-7d83995a02c2")
+		(property "Reference" "F1" (at 96.52 60.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "Fusible ?" (at 96.52 66.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" (at 96.52 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Fusible vertical (cuerpo negro)" (at 96.52 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 96.52 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "dc4dec05-db7a-58a1-b7b6-c5ca826d7f88"))
+		(pin "2" (uuid "73798174-b477-560b-93ca-1adac6c82332"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "F1") (unit 1))))
+	)
+	(wire (pts (xy 92.71 63.50) (xy 90.17 63.50)) (stroke (width 0) (type default)) (uuid "aa108b39-4669-5ea4-a815-d7039fb80964"))
+	(label "AC_L_ENTRADA" (at 90.17 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a40dae13-9ee9-570e-91fd-4606b1c9bb65"))
+	(wire (pts (xy 100.33 63.50) (xy 102.87 63.50)) (stroke (width 0) (type default)) (uuid "6ef78480-8707-5ec1-98ec-d3bd9baa859d"))
+	(label "AC_L" (at 102.87 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "38f94ce0-56b1-50b1-8e9e-1d98b3a2aa2a"))
+	(symbol (lib_id "Device:R") (at 147.32 63.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "dfbf6583-d5db-5df1-bedc-df6e057747a4")
+		(property "Reference" "R1" (at 147.32 60.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "R fusible ?" (at 147.32 66.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" (at 147.32 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Resistor fusible vertical (cuerpo negro)" (at 147.32 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 147.32 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "712905c6-2a34-5047-b5bf-8b7913ade7c0"))
+		(pin "2" (uuid "eb5f1f78-19c6-5e39-b1f9-dc98e0d10b50"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R1") (unit 1))))
+	)
+	(wire (pts (xy 143.51 63.50) (xy 140.97 63.50)) (stroke (width 0) (type default)) (uuid "ebb3e201-ba47-5934-93eb-ca065978e940"))
+	(label "AC_N_ENTRADA" (at 140.97 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "13b3e3d2-252f-52fd-aee2-95077a176b30"))
+	(wire (pts (xy 151.13 63.50) (xy 153.67 63.50)) (stroke (width 0) (type default)) (uuid "92daa946-edfa-5320-b2e0-f32e939bc709"))
+	(label "AC_N" (at 153.67 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7dbec834-a9e0-552e-b4f5-fdb16ca1d338"))
+	(symbol (lib_id "Device:Varistor") (at 198.12 63.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "d0f6574c-a186-55f6-877d-90e1a14eafe5")
+		(property "Reference" "VR1" (at 198.12 60.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "MOV ?" (at 198.12 66.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Varistor:RV_Disc_D7mm_W3.4mm_P5mm" (at 198.12 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Disco azul entre L y N (sin etiqueta visible)" (at 198.12 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 198.12 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4ec5f131-4841-51f2-8694-fc2ff9f1827a"))
+		(pin "2" (uuid "d67b4c46-acf0-59a4-9f3f-8c1cfc383536"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "VR1") (unit 1))))
+	)
+	(wire (pts (xy 194.31 63.50) (xy 191.77 63.50)) (stroke (width 0) (type default)) (uuid "85bf213e-5d88-5c6f-b76f-26041845bb0f"))
+	(label "AC_N" (at 191.77 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "73d302c9-e69d-5957-bd49-645a4d85ac7b"))
+	(wire (pts (xy 201.93 63.50) (xy 204.47 63.50)) (stroke (width 0) (type default)) (uuid "4b4dcb01-5a00-5058-b875-346f7f8a2ba8"))
+	(label "AC_L" (at 204.47 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "25f40418-851a-5df6-b26b-e1d1736cc642"))
+	(symbol (lib_id "Device:Varistor") (at 45.72 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "c086512e-bab6-5c74-a436-8427bf24fb9d")
+		(property "Reference" "VR2" (at 45.72 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "MOV (no montado)" (at 45.72 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Lampara:VR2_Ovalo_P7.5mm" (at 45.72 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Varistor, no montado (serigrafía ovalada original)" (at 45.72 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 45.72 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "cf116953-e9ee-5dd1-a545-cc0a73793ffa"))
+		(pin "2" (uuid "39d8a4e9-a044-51cf-a9fd-dff0cbeca200"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "VR2") (unit 1))))
+	)
+	(wire (pts (xy 41.91 88.90) (xy 39.37 88.90)) (stroke (width 0) (type default)) (uuid "b678d950-73d8-5329-a0c6-fd7f871e7d53"))
+	(label "AC_L" (at 39.37 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "55b66907-fe13-5b85-8222-3864ee714eff"))
+	(wire (pts (xy 49.53 88.90) (xy 52.07 88.90)) (stroke (width 0) (type default)) (uuid "68522072-7018-51c4-9b4e-e19bd40567e5"))
+	(label "AC_N" (at 52.07 88.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "dc9c0fa8-5e4c-544c-b403-df2d8e8382ea"))
+	(symbol (lib_id "Device:L_Ferrite_Coupled") (at 96.52 88.90 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "3507c080-e266-564c-8a28-2bb2d49daf75")
+		(property "Reference" "LF1" (at 96.52 82.55 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "CMC (no montado)" (at 96.52 95.25 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Lampara:LF1_CMC_4pin_7.5x4.5mm" (at 96.52 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Choque de modo común, no montado" (at 96.52 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 96.52 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d7c96d24-0bf3-5955-8dfd-0a8ad3ac867c"))
+		(pin "2" (uuid "5704ee71-04d0-59d4-a585-cb8416f7f0ea"))
+		(pin "3" (uuid "954c2df7-15ed-5419-a08b-3a536ddf755c"))
+		(pin "4" (uuid "b9fa81f2-68e8-5ac6-8460-8c4fe3c51c86"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "LF1") (unit 1))))
+	)
+	(wire (pts (xy 91.44 86.36) (xy 88.90 86.36)) (stroke (width 0) (type default)) (uuid "50a23011-b270-54d9-833d-2f6d1a9b19c5"))
+	(label "AC_N" (at 88.90 86.36 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9567e9fc-1667-5c8b-9789-20d9bf5e69d2"))
+	(wire (pts (xy 101.60 86.36) (xy 104.14 86.36)) (stroke (width 0) (type default)) (uuid "d89d4606-902e-50ca-b877-7c312c5a24b8"))
+	(label "AC_N" (at 104.14 86.36 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4b1d4785-d6c1-53b2-a74c-53c0af75fb55"))
+	(wire (pts (xy 91.44 91.44) (xy 88.90 91.44)) (stroke (width 0) (type default)) (uuid "79f11091-efa1-5db7-9ed4-b6dd4cf9d4ff"))
+	(label "AC_L" (at 88.90 91.44 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9281aa57-938e-5fc9-896e-7c7866b034b3"))
+	(wire (pts (xy 101.60 91.44) (xy 104.14 91.44)) (stroke (width 0) (type default)) (uuid "e601f6b6-0c4c-5a66-a919-c770e5f525e2"))
+	(label "AC_L" (at 104.14 91.44 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cbbc7bd4-c435-5487-ab96-3e1b8b8da21c"))
+	(symbol (lib_id "Device:L") (at 147.32 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "765582cd-3c46-5d92-8578-f6e8c53bef8f")
+		(property "Reference" "L1" (at 147.32 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "L (no montado)" (at 147.32 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" (at 147.32 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Inductor radial, no montado" (at 147.32 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 147.32 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "42467664-c9f6-56ec-96ea-7582f5edaec1"))
+		(pin "2" (uuid "c1ef7594-3559-532c-ac42-4f272832d899"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "L1") (unit 1))))
+	)
+	(wire (pts (xy 143.51 88.90) (xy 140.97 88.90)) (stroke (width 0) (type default)) (uuid "80cab6ba-8e2b-5453-b892-b889563e4dba"))
+	(label "AC_N" (at 140.97 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8751167b-bc13-5243-b3b1-1903c63971a8"))
+	(wire (pts (xy 151.13 88.90) (xy 153.67 88.90)) (stroke (width 0) (type default)) (uuid "b690bbd8-85be-55b5-be95-92a6a0173bf8"))
+	(label "AC_N" (at 153.67 88.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "482b9dce-f823-5d49-9b9f-b307b53b24bf"))
+	(symbol (lib_id "Device:C") (at 198.12 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "db6ba59c-3b10-581f-bb40-c75b5b91b536")
+		(property "Reference" "CX1" (at 198.12 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "X2 (no montado)" (at 198.12 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:C_Rect_L19.0mm_W8.0mm_P15.00mm_MKS4" (at 198.12 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Capacitor X2, no montado" (at 198.12 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 198.12 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "62c16b81-57c0-5646-8f80-d8a511cceac7"))
+		(pin "2" (uuid "475b159e-a10c-5ffa-90fd-67c37144a472"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "CX1") (unit 1))))
+	)
+	(wire (pts (xy 194.31 88.90) (xy 191.77 88.90)) (stroke (width 0) (type default)) (uuid "929ccd82-774d-53b3-864e-804a6ea26fdd"))
+	(label "AC_N" (at 191.77 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "555ef856-4d35-50ac-98e8-d1821a52896e"))
+	(wire (pts (xy 201.93 88.90) (xy 204.47 88.90)) (stroke (width 0) (type default)) (uuid "1e7b4103-7110-5565-9877-9f9be2e6aa82"))
+	(label "AC_L" (at 204.47 88.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1763c6d3-3a3b-5b0e-b0ed-c280dfb922c0"))
+	(symbol (lib_id "Device:R") (at 45.72 114.30 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "ec8f4abc-125f-5ab4-b3e4-3cc0e52f4cb6")
+		(property "Reference" "RL1" (at 45.72 111.76 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 45.72 116.84 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Pads con etiqueta 'RL' en la cara inferior, no montado" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0c61764f-a9e0-5199-82b9-057646f5a83f"))
+		(pin "2" (uuid "42a92b64-aedf-5f4e-98e9-f66b435bec6e"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "RL1") (unit 1))))
+	)
+	(wire (pts (xy 41.91 114.30) (xy 39.37 114.30)) (stroke (width 0) (type default)) (uuid "2eac25da-bffb-57a2-bc68-4dd48eb784c9"))
+	(label "AC_N" (at 39.37 114.30 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8fdab60f-ebb3-5514-8ef1-fcf4983ba3de"))
+	(wire (pts (xy 49.53 114.30) (xy 52.07 114.30)) (stroke (width 0) (type default)) (uuid "90de7d93-18b6-5c57-9c05-f80518b71686"))
+	(label "AC_N" (at 52.07 114.30 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "57f222ed-2556-59c3-a95a-2563898c232e"))
+	(text "Puente rectificador y bus DC" (exclude_from_sim no) (at 294.64 43.18 0) (effects (font (size 2.0 2.0) (bold yes)) (justify left bottom)) (uuid "a019211a-695c-5ecf-bd05-751d5210879e"))
+	(symbol (lib_id "Device:D") (at 304.80 63.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "c2ea29f0-9948-525e-8ae4-11388a721a31")
+		(property "Reference" "D1" (at 304.80 59.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "M7 ?" (at 304.80 67.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SMA" (at 304.80 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 304.80 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Puente rectificador (franja/cátodo hacia el cuello, medido)" (at 304.80 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 304.80 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "96af81df-08a4-5a54-87c5-0941db379738"))
+		(pin "2" (uuid "c19d1bcf-554f-5310-9d9f-f73250ada0c4"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D1") (unit 1))))
+	)
+	(wire (pts (xy 300.99 63.50) (xy 298.45 63.50)) (stroke (width 0) (type default)) (uuid "9e20c74a-0641-5d28-8662-00dac89b1be6"))
+	(label "AC_L" (at 298.45 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0dc264c2-2905-51a3-991a-e51cf8bc3e45"))
+	(wire (pts (xy 308.61 63.50) (xy 311.15 63.50)) (stroke (width 0) (type default)) (uuid "0388031a-54e7-5998-809e-ea677a008d23"))
+	(label "DC-" (at 311.15 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "42b530ff-cd6d-5756-a13d-afcd352af08f"))
+	(symbol (lib_id "Device:D") (at 355.60 63.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "0e2f4bdd-a574-5f5a-86ae-cd8922545119")
+		(property "Reference" "D2" (at 355.60 59.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "M7 ?" (at 355.60 67.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SMA" (at 355.60 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 355.60 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Puente rectificador (franja/cátodo hacia las pestañas, medido)" (at 355.60 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 355.60 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5d1c2432-6288-58e1-a0c7-e15c7a5ddc25"))
+		(pin "2" (uuid "39c720b7-9afc-5819-8412-82d7adcf2a9a"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D2") (unit 1))))
+	)
+	(wire (pts (xy 351.79 63.50) (xy 349.25 63.50)) (stroke (width 0) (type default)) (uuid "38ffa737-9766-5931-8435-dc5aeb483be2"))
+	(label "DC+" (at 349.25 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c0c0ed33-4bbd-5647-b269-e50c4bf721b2"))
+	(wire (pts (xy 359.41 63.50) (xy 361.95 63.50)) (stroke (width 0) (type default)) (uuid "58f37e97-8a8d-5732-a63d-e8a40670911d"))
+	(label "AC_L" (at 361.95 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "83e254dc-bbaa-565d-9e50-6ba2ed8d98c0"))
+	(symbol (lib_id "Device:D") (at 406.40 63.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "8358eff2-26c0-5d89-bdf7-6c0741c4ff6a")
+		(property "Reference" "D3" (at 406.40 59.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "M7 ?" (at 406.40 67.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SMA" (at 406.40 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 406.40 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Puente rectificador (franja/cátodo hacia las pestañas, medido)" (at 406.40 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 406.40 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "33c29006-464c-50c0-9250-355c5805c3ab"))
+		(pin "2" (uuid "dcf43c79-74f1-56f1-9f17-cb27103a027a"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D3") (unit 1))))
+	)
+	(wire (pts (xy 402.59 63.50) (xy 400.05 63.50)) (stroke (width 0) (type default)) (uuid "c40c9def-d198-5673-b619-7a1699830b62"))
+	(label "DC+" (at 400.05 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c7f0e0c4-03b8-5267-b99f-e56c71108860"))
+	(wire (pts (xy 410.21 63.50) (xy 412.75 63.50)) (stroke (width 0) (type default)) (uuid "fc1de509-5cca-5ea6-b526-7359f8564159"))
+	(label "AC_N" (at 412.75 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a3747887-4c84-5b9c-8a4a-dbe7b6c062fc"))
+	(symbol (lib_id "Device:D") (at 457.20 63.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "2cff7a4f-488b-55f1-9e14-9c1907ccb703")
+		(property "Reference" "D4" (at 457.20 59.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "M7 ?" (at 457.20 67.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SMA" (at 457.20 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 457.20 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Puente rectificador (franja/cátodo hacia el cuello, medido)" (at 457.20 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 457.20 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d6a7d3dd-0325-57f6-8b6e-8027786c5762"))
+		(pin "2" (uuid "0569a240-4917-5777-ab58-014a7b295410"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D4") (unit 1))))
+	)
+	(wire (pts (xy 453.39 63.50) (xy 450.85 63.50)) (stroke (width 0) (type default)) (uuid "cfbb0735-5330-5a69-95ba-b08a8592c38d"))
+	(label "AC_N" (at 450.85 63.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "20b16bef-2dc7-5bd2-a7ba-3603a436cf24"))
+	(wire (pts (xy 461.01 63.50) (xy 463.55 63.50)) (stroke (width 0) (type default)) (uuid "84ce4e34-3f29-5b4e-9de3-8e635110fc80"))
+	(label "DC-" (at 463.55 63.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5a05e213-febc-58b1-ab08-32a7090660cb"))
+	(symbol (lib_id "Device:C") (at 304.80 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "89df821a-f838-53b7-afb6-b63609d2486d")
+		(property "Reference" "C6" (at 304.80 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "CBB ?" (at 304.80 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:C_Rect_L19.0mm_W9.0mm_P15.00mm_MKS4" (at 304.80 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 304.80 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Capacitor de película rojo (CBB); etiqueta no visible en la foto" (at 304.80 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 304.80 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ef0e6ff9-5748-57d3-bce3-b6a08e15f82d"))
+		(pin "2" (uuid "0318a2d1-3346-5d96-aab5-e4e6725fcda0"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C6") (unit 1))))
+	)
+	(wire (pts (xy 300.99 88.90) (xy 298.45 88.90)) (stroke (width 0) (type default)) (uuid "3f41a885-3512-5ac5-9d23-f34ee79707ce"))
+	(label "DC+" (at 298.45 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3099f0b6-7c60-595e-9b1c-6f2c3ffcaadc"))
+	(wire (pts (xy 308.61 88.90) (xy 311.15 88.90)) (stroke (width 0) (type default)) (uuid "a3d3f1e9-f627-5c65-b0df-bd4fc9a35cd6"))
+	(label "DC-" (at 311.15 88.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a08583c3-9eef-50a5-a8a4-a1a5e4c113b0"))
+	(symbol (lib_id "Device:Varistor") (at 355.60 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "f56a1b23-bed5-58b5-944a-324fbbb78034")
+		(property "Reference" "VR3" (at 355.60 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "MOV ?" (at 355.60 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W4.2mm_P7.5mm" (at 355.60 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 355.60 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Disco azul junto a la etiqueta VR3" (at 355.60 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 355.60 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0d9a20f7-2f5c-5de9-a6e7-3a4c9e0bb331"))
+		(pin "2" (uuid "67398a42-da18-5477-b664-bf912c2d3257"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "VR3") (unit 1))))
+	)
+	(wire (pts (xy 351.79 88.90) (xy 349.25 88.90)) (stroke (width 0) (type default)) (uuid "6c631c73-b80e-5336-91d3-a53dedee01d6"))
+	(label "DC-" (at 349.25 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3162830-e8fd-504b-aad4-bacbb92aa27c"))
+	(wire (pts (xy 359.41 88.90) (xy 361.95 88.90)) (stroke (width 0) (type default)) (uuid "a7eb0a4e-cd5a-5a05-9b63-39d86d842031"))
+	(label "DC+" (at 361.95 88.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c5bad662-3d90-5e69-b22b-2f724a02d9cf"))
+	(symbol (lib_id "Device:C_Polarized") (at 406.40 88.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "6b5b4d16-b8dd-5e25-87c4-3b90381e1b0f")
+		(property "Reference" "CE1" (at 406.40 86.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "CE (no montado)" (at 406.40 91.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (at 406.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 406.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Electrolítico, no montado" (at 406.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 406.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ce5cdf3c-93e9-530d-9770-4b4cec97296e"))
+		(pin "2" (uuid "280ca248-31ca-5d3c-84f4-77f597214b4d"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "CE1") (unit 1))))
+	)
+	(wire (pts (xy 402.59 88.90) (xy 400.05 88.90)) (stroke (width 0) (type default)) (uuid "9868f25a-3d5f-5168-b1b6-93b91f485c0b"))
+	(label "N-CE1-1" (at 400.05 88.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ca3214e2-5c87-5b0a-877e-aca0bf68ac56"))
+	(text "Etapa de potencia: T1, Q1, sensado y devanado auxiliar" (exclude_from_sim no) (at 35.56 144.78 0) (effects (font (size 2.0 2.0) (bold yes)) (justify left bottom)) (uuid "47e31d44-a66d-5dc4-9cf2-40f6630290b3"))
+	(symbol (lib_id "Device:Transformer_1P_1S") (at 45.72 165.10 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "5bcc090e-a0af-5ad2-ab93-ac491d666bd0")
+		(property "Reference" "T1" (at 45.72 156.21 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Transformador EE ?" (at 45.72 173.99 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Lampara:T1_EE_4pin" (at 45.72 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Transformador/inductor EE con núcleo amarillo, 4 pines" (at 45.72 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 45.72 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4068c3b9-2acb-5948-8a12-ab5e039a0630"))
+		(pin "2" (uuid "96df09c5-30d4-5730-a741-928bba98a7d6"))
+		(pin "3" (uuid "6391f964-92cf-5ecf-a6f4-7564cad92130"))
+		(pin "4" (uuid "3d6e1e7f-4f58-55f4-aa5e-b5a7a59d008b"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "T1") (unit 1))))
+	)
+	(wire (pts (xy 35.56 160.02) (xy 33.02 160.02)) (stroke (width 0) (type default)) (uuid "67052cff-3488-5651-8135-b3d5f4c4e143"))
+	(label "AUX_T1" (at 33.02 160.02 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "24029f6c-5183-5ad0-bd65-5aa8e1949768"))
+	(wire (pts (xy 35.56 170.18) (xy 33.02 170.18)) (stroke (width 0) (type default)) (uuid "80b83aab-8dd2-58d2-9523-23bdead831f9"))
+	(label "LED+" (at 33.02 170.18 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "16b34937-5c7f-5b46-a789-63366b1d9045"))
+	(wire (pts (xy 55.88 170.18) (xy 58.42 170.18)) (stroke (width 0) (type default)) (uuid "4ee8dbc8-8c4f-54f6-86a9-628e6c26020f"))
+	(label "N-R12-1" (at 58.42 170.18 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7a9b4f3c-98d8-5bad-aa0f-6d35e19553f2"))
+	(wire (pts (xy 55.88 160.02) (xy 58.42 160.02)) (stroke (width 0) (type default)) (uuid "42150f59-5719-5d3b-8c90-d17ae0f46f90"))
+	(label "LED+" (at 58.42 160.02 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "76a0cfb9-6d57-5979-9e72-9a10f55d1ed3"))
+	(symbol (lib_id "Device:Q_NMOS_GDS") (at 96.52 165.10 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "2e32dbf1-3507-5c78-bb10-f5a64577776f")
+		(property "Reference" "Q1" (at 101.60 163.83 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "FIR12N65F" (at 101.60 166.37 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_Vertical" (at 96.52 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "MOSFET N 12 A / 650 V (FIR12N65F) con disipador" (at 96.52 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 96.52 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "fee1fe94-cac7-5928-b1c7-4c59e36fe69a"))
+		(pin "2" (uuid "58af7cf6-4b87-5775-9e19-589117769992"))
+		(pin "3" (uuid "a0b3175e-b03c-5961-b11d-28cf0551c97a"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "Q1") (unit 1))))
+	)
+	(wire (pts (xy 91.44 165.10) (xy 88.90 165.10)) (stroke (width 0) (type default)) (uuid "cca96002-a47e-5e68-bb3d-e161902d3767"))
+	(label "COMPUERTA_Q1" (at 88.90 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "df96b756-bfd3-5a63-b367-e6ecef44e394"))
+	(wire (pts (xy 99.06 170.18) (xy 99.06 172.72)) (stroke (width 0) (type default)) (uuid "63fe9998-4707-50f8-a076-aff62ea63e11"))
+	(label "U1_PIN6" (at 99.06 172.72 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "88772486-bca9-5e72-ab50-2ddd2819bb3e"))
+	(symbol (lib_id "Device:R") (at 147.32 165.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "332809e7-bd93-5437-8d5a-942b28f2def1")
+		(property "Reference" "RS1" (at 147.32 162.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1.2 (1R20)" (at 147.32 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 147.32 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Resistor de sensado de corriente" (at 147.32 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 147.32 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c8ce2a51-d3e4-5654-890f-b785832411e6"))
+		(pin "2" (uuid "6318eee6-33fe-563b-b465-d091bfca00c4"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "RS1") (unit 1))))
+	)
+	(wire (pts (xy 143.51 165.10) (xy 140.97 165.10)) (stroke (width 0) (type default)) (uuid "04c3d5d5-f015-5402-b3e6-b20936770511"))
+	(label "RS_A" (at 140.97 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "dbd8ffa0-845c-54d1-a6c6-099969fb74ab"))
+	(wire (pts (xy 151.13 165.10) (xy 153.67 165.10)) (stroke (width 0) (type default)) (uuid "38177f7e-8d70-538c-8b98-80f5f357bb66"))
+	(label "RS_B" (at 153.67 165.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "95d16de8-29d3-578e-9bca-60785c01eb5c"))
+	(symbol (lib_id "Device:R") (at 198.12 165.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "61c19b83-5dab-5df7-9249-e6481a67717d")
+		(property "Reference" "RS2" (at 198.12 162.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1.2 (1R20)" (at 198.12 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 198.12 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Resistor de sensado de corriente" (at 198.12 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 198.12 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c077b038-64bf-57da-9201-19f11e84ec87"))
+		(pin "2" (uuid "6837bbef-4b43-5aed-9500-931895519d10"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "RS2") (unit 1))))
+	)
+	(wire (pts (xy 194.31 165.10) (xy 191.77 165.10)) (stroke (width 0) (type default)) (uuid "3a30b752-d8d2-5868-bd5b-a09f860ef8fe"))
+	(label "RS_A" (at 191.77 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "58fc6fe8-1c3d-537c-a16d-2f874958c8df"))
+	(wire (pts (xy 201.93 165.10) (xy 204.47 165.10)) (stroke (width 0) (type default)) (uuid "7ebe8067-3d4a-5a5a-8c45-7861dc96aae1"))
+	(label "RS_B" (at 204.47 165.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3c411c30-9586-5f0b-8bbe-25854d3de1ba"))
+	(symbol (lib_id "Device:R") (at 45.72 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "3ddc0229-15da-5225-8329-3779cf2761db")
+		(property "Reference" "RS3" (at 45.72 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1.2 (1R20)" (at 45.72 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 45.72 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Resistor de sensado de corriente" (at 45.72 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7c71972f-c22d-5530-a839-68a6b376d708"))
+		(pin "2" (uuid "93f7b6d4-4436-5c22-bc12-7c403f8f5b2c"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "RS3") (unit 1))))
+	)
+	(wire (pts (xy 41.91 190.50) (xy 39.37 190.50)) (stroke (width 0) (type default)) (uuid "4f9eea9a-cef9-53c8-8e1a-35f725a94d32"))
+	(label "RS_A" (at 39.37 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5054c17e-884b-5598-9ee1-af0094d15365"))
+	(wire (pts (xy 49.53 190.50) (xy 52.07 190.50)) (stroke (width 0) (type default)) (uuid "876c0333-073b-5497-9679-6ed841c81197"))
+	(label "RS_B" (at 52.07 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "61784fd9-eaa4-51a5-b57f-9ea1fd3dda4e"))
+	(symbol (lib_id "Device:R") (at 96.52 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "4c11d0d4-3902-58a7-b575-75a2abed08a9")
+		(property "Reference" "RS4" (at 96.52 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1.3 (1R30)" (at 96.52 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 96.52 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Resistor de sensado de corriente" (at 96.52 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 96.52 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f30cdab5-9935-5ba1-a616-2daa4f396e40"))
+		(pin "2" (uuid "07818662-301d-5ad0-9fe1-f0d6c8c6278b"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "RS4") (unit 1))))
+	)
+	(wire (pts (xy 92.71 190.50) (xy 90.17 190.50)) (stroke (width 0) (type default)) (uuid "d28c2354-1c74-5b38-852f-5a718601de74"))
+	(label "RS_A" (at 90.17 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a0e80f7d-8729-5ee5-b63a-dbe83d36159a"))
+	(wire (pts (xy 100.33 190.50) (xy 102.87 190.50)) (stroke (width 0) (type default)) (uuid "a6a98b62-4bf9-59b1-9ccb-6bde94df7f02"))
+	(label "RS_B" (at 102.87 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e173b4b-4406-59db-b2a0-368e1148577d"))
+	(symbol (lib_id "Device:D") (at 147.32 190.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "bd22f186-40db-59c0-b408-1821c1bed2f4")
+		(property "Reference" "D7" (at 147.32 186.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "?" (at 147.32 194.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SMA" (at 147.32 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Diodo SMD" (at 147.32 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 147.32 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "43602b0d-ca0f-5fe7-9143-6b072eaea226"))
+		(pin "2" (uuid "487235cd-b57c-56ca-99f6-7cc475baed93"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D7") (unit 1))))
+	)
+	(wire (pts (xy 143.51 190.50) (xy 140.97 190.50)) (stroke (width 0) (type default)) (uuid "9680d3ea-59e1-516a-950d-81ceb5bddeee"))
+	(label "AUX_T1" (at 140.97 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0871728d-b7c3-5aa1-a4e6-23db983bc011"))
+	(wire (pts (xy 151.13 190.50) (xy 153.67 190.50)) (stroke (width 0) (type default)) (uuid "134a5316-e022-5358-8c2c-2cb4a22e94b7"))
+	(label "N-D7-2" (at 153.67 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8aaf034e-0054-531c-a5b9-16ad92b5f09d"))
+	(symbol (lib_id "Device:R") (at 198.12 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "1f81bece-9432-537e-a3d6-664fe064c5e6")
+		(property "Reference" "R6" (at 198.12 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22 (220)" (at 198.12 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 198.12 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 198.12 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 198.12 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d89475dc-4aab-550d-9877-02097360885d"))
+		(pin "2" (uuid "057fd682-7a21-5a87-84cf-57ea82dc0bbd"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R6") (unit 1))))
+	)
+	(wire (pts (xy 194.31 190.50) (xy 191.77 190.50)) (stroke (width 0) (type default)) (uuid "13ffc191-7d23-5c72-b505-b1cf62b3d0dc"))
+	(label "N-D7-2" (at 191.77 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b0883381-dc81-583e-b810-9b18d6748661"))
+	(wire (pts (xy 201.93 190.50) (xy 204.47 190.50)) (stroke (width 0) (type default)) (uuid "cbe1a8cb-4fee-59d3-9285-ec09ac6601d9"))
+	(label "VCC" (at 204.47 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9f2d05a4-99ee-5297-bc4f-5bd85e82ff4f"))
+	(symbol (lib_id "Device:C") (at 45.72 215.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "62a87d1f-0507-57d1-a0ab-2e0182f49b07")
+		(property "Reference" "C3" (at 45.72 213.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 45.72 218.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 45.72 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 45.72 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5cdb6f5a-1691-5692-ae63-e443ed022a8c"))
+		(pin "2" (uuid "f18f6551-8643-54c5-be32-d09acabb9622"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C3") (unit 1))))
+	)
+	(wire (pts (xy 41.91 215.90) (xy 39.37 215.90)) (stroke (width 0) (type default)) (uuid "af13c1d3-5d0f-57d9-a6b6-55cd0af796e6"))
+	(label "DC+" (at 39.37 215.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b1e3c245-b19f-5289-9707-f3f91619d485"))
+	(wire (pts (xy 49.53 215.90) (xy 52.07 215.90)) (stroke (width 0) (type default)) (uuid "27c86b2d-02be-5678-a803-dfc50e99d485"))
+	(label "N-C3-2" (at 52.07 215.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "08da327c-1c72-52c2-91b3-cd41f114e048"))
+	(symbol (lib_id "Device:D") (at 96.52 215.90 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "4bffc9ae-2a7c-5542-b263-9f9e2e1c4f08")
+		(property "Reference" "D5" (at 96.52 212.09 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 96.52 219.71 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_MiniMELF" (at 96.52 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 96.52 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 96.52 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "81534948-1075-5247-bffc-193490216c7d"))
+		(pin "2" (uuid "ecd95bae-b9fc-5391-8c46-ea3755d8fa64"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D5") (unit 1))))
+	)
+	(wire (pts (xy 92.71 215.90) (xy 90.17 215.90)) (stroke (width 0) (type default)) (uuid "c342f239-e4d5-58c1-a9fa-d35f09205208"))
+	(label "N-C3-2" (at 90.17 215.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4f3494fd-75b6-57c8-9f65-d917713a5d43"))
+	(wire (pts (xy 100.33 215.90) (xy 102.87 215.90)) (stroke (width 0) (type default)) (uuid "b7d75bdd-9de8-5242-b61e-0b2231e5934a"))
+	(label "N-CE1-1" (at 102.87 215.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "000a2704-cba7-59b0-8b21-e1a43fbd72ee"))
+	(symbol (lib_id "Device:R") (at 147.32 215.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "4145bc13-6f9e-58cc-aba6-4fc5ff9dbdcf")
+		(property "Reference" "R2" (at 147.32 213.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 147.32 218.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 147.32 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 147.32 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 147.32 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f46505c6-2cf7-5563-a7ef-b1e96abad992"))
+		(pin "2" (uuid "15d6303e-4442-54c2-8164-2fc26a4b7f3b"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R2") (unit 1))))
+	)
+	(wire (pts (xy 143.51 215.90) (xy 140.97 215.90)) (stroke (width 0) (type default)) (uuid "e54e0fbc-0b89-5631-856a-600b0395b401"))
+	(label "N-R2-1" (at 140.97 215.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8ab39d74-3798-5b0d-9929-e8bdb05e7dac"))
+	(symbol (lib_id "Device:R") (at 198.12 215.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "f6525312-5dd0-5046-9c4e-f9589b58d091")
+		(property "Reference" "R3" (at 198.12 213.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 198.12 218.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 198.12 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 198.12 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 198.12 215.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ea901c61-3829-55d7-a6d0-c3febfba0ac2"))
+		(pin "2" (uuid "88628cc2-56ca-5d4b-8d41-a732e7a967ba"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R3") (unit 1))))
+	)
+	(wire (pts (xy 194.31 215.90) (xy 191.77 215.90)) (stroke (width 0) (type default)) (uuid "28dd1f24-fa8e-5ea1-bc3d-d7263b43b4b3"))
+	(label "N-CE1-1" (at 191.77 215.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "81eaf1cf-d76f-5e14-b6c7-a45bf387c68f"))
+	(wire (pts (xy 201.93 215.90) (xy 204.47 215.90)) (stroke (width 0) (type default)) (uuid "83064668-cfe7-5e1e-9638-900d0b6c7f3f"))
+	(label "N-R2-1" (at 204.47 215.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b53310b0-7474-5883-91a0-36f8c7bf45f2"))
+	(text "Salida a los LEDs" (exclude_from_sim no) (at 294.64 144.78 0) (effects (font (size 2.0 2.0) (bold yes)) (justify left bottom)) (uuid "98011392-82d5-544f-a771-490beb018dce"))
+	(symbol (lib_id "Device:D") (at 304.80 165.10 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "15149794-31d9-5170-b66b-4faea4b9f674")
+		(property "Reference" "D8" (at 304.80 161.29 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Diodo rápido ?" (at 304.80 168.91 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_THT:D_DO-201AD_P5.08mm_Vertical_KathodeUp" (at 304.80 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 304.80 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Diodo axial montado vertical (verificar polaridad)" (at 304.80 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 304.80 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1bf15c91-4447-5d8b-b327-807f638c00a8"))
+		(pin "2" (uuid "0de2160c-508c-59e8-aaee-08f352cfbe40"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D8") (unit 1))))
+	)
+	(wire (pts (xy 300.99 165.10) (xy 298.45 165.10)) (stroke (width 0) (type default)) (uuid "0e835701-915c-5e14-aabe-a2b07349cba5"))
+	(label "LED-" (at 298.45 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "48b47d4d-8dff-57a7-8b67-a5d02c8adc99"))
+	(wire (pts (xy 308.61 165.10) (xy 311.15 165.10)) (stroke (width 0) (type default)) (uuid "244c0e59-26ab-5a8b-b180-e818564aa41e"))
+	(label "N-D8-2" (at 311.15 165.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cdebd6f7-8581-58b5-ab98-dff3fc1e3e88"))
+	(symbol (lib_id "Device:C_Polarized") (at 355.60 165.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "e3c1a5a6-501b-54a3-b39b-6939e660374e")
+		(property "Reference" "CE3" (at 355.60 162.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "270uF 100V" (at 355.60 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 355.60 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 355.60 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Electrolítico de salida" (at 355.60 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 355.60 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5d71d937-571d-5ade-bcdd-9a2beaf7c7a1"))
+		(pin "2" (uuid "848f22ef-43ae-529e-9375-51e9b0fd316e"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "CE3") (unit 1))))
+	)
+	(wire (pts (xy 351.79 165.10) (xy 349.25 165.10)) (stroke (width 0) (type default)) (uuid "0160a321-b010-50ba-b46c-7aaa3988079d"))
+	(label "LED+" (at 349.25 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5c066c98-8422-561b-9f9e-dcccfbdf7884"))
+	(wire (pts (xy 359.41 165.10) (xy 361.95 165.10)) (stroke (width 0) (type default)) (uuid "473a1b25-d3e3-5c02-a2f9-08e5f81cf6da"))
+	(label "LED-" (at 361.95 165.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f629d676-d1ae-505b-aed2-c8d9415763c5"))
+	(symbol (lib_id "Device:C_Polarized") (at 406.40 165.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "35366ebb-10d6-5c32-acb4-6696d99f23a7")
+		(property "Reference" "CE4" (at 406.40 162.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "270uF 100V" (at 406.40 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 406.40 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 406.40 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Electrolítico de salida" (at 406.40 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 406.40 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c371ad83-9244-58c9-b08b-6c5a9f0128c3"))
+		(pin "2" (uuid "371a6d49-2a57-5117-bb22-d58386d1f7fb"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "CE4") (unit 1))))
+	)
+	(wire (pts (xy 402.59 165.10) (xy 400.05 165.10)) (stroke (width 0) (type default)) (uuid "3f5f9576-fb7d-5164-a31b-c1e5ed696358"))
+	(label "LED+" (at 400.05 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6cb9f6ca-c261-5d51-8d9c-b7b6a46cd335"))
+	(wire (pts (xy 410.21 165.10) (xy 412.75 165.10)) (stroke (width 0) (type default)) (uuid "33405f82-f185-5efa-99cb-c702ddbb3fbe"))
+	(label "LED-" (at 412.75 165.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "431ad66d-ba17-52d1-9081-82227a5ea8b7"))
+	(symbol (lib_id "Connector_Generic:Conn_01x02") (at 457.20 165.10 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "97652802-2aa0-5e81-827f-03bfe1e1f004")
+		(property "Reference" "J1" (at 457.20 161.29 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "LED (- , +)" (at 457.20 171.45 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 457.20 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 457.20 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Conector blanco a la placa de LEDs (1 = -, 2 = +)" (at 457.20 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 457.20 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "3d306449-edf5-5c13-8ea3-33e3ea67b7fa"))
+		(pin "2" (uuid "a5fa3d56-a2f5-58eb-9b34-8499e7646431"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "J1") (unit 1))))
+	)
+	(wire (pts (xy 452.12 165.10) (xy 449.58 165.10)) (stroke (width 0) (type default)) (uuid "e33ad4ab-a59d-580b-bd35-99c364d8b14c"))
+	(label "LED-" (at 449.58 165.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b7470c5e-f0e0-5bcb-a740-7a2a3df6aab7"))
+	(wire (pts (xy 452.12 167.64) (xy 449.58 167.64)) (stroke (width 0) (type default)) (uuid "988c7de2-1939-5c60-a7fa-46418c1cf2e2"))
+	(label "LED+" (at 449.58 167.64 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f3f8a1b3-8d27-5ffd-956c-b0872bbf2488"))
+	(symbol (lib_id "Device:R") (at 304.80 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "f63a254a-08bf-5c04-9c81-4df7be0c0069")
+		(property "Reference" "R14" (at 304.80 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "75k (753)" (at 304.80 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 304.80 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 304.80 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 304.80 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 304.80 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "69c52cd0-ab64-5fff-a9ac-636a105c7252"))
+		(pin "2" (uuid "c031ef38-2202-58ea-870a-7a9456188ada"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R14") (unit 1))))
+	)
+	(wire (pts (xy 300.99 190.50) (xy 298.45 190.50)) (stroke (width 0) (type default)) (uuid "1fce5af6-6971-577d-814f-277c616e9cdd"))
+	(label "LED+" (at 298.45 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a91a517e-ea9b-5a99-9fa4-6d38606a17b8"))
+	(wire (pts (xy 308.61 190.50) (xy 311.15 190.50)) (stroke (width 0) (type default)) (uuid "d49969c2-6e18-5a0f-9dfb-70f5d7ba41f2"))
+	(label "LED-" (at 311.15 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "26747863-5087-59e8-ad1a-c0a89406ba3b"))
+	(symbol (lib_id "Device:R") (at 355.60 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "c737bbb4-3770-5656-a3a6-643a970496ed")
+		(property "Reference" "R15" (at 355.60 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 355.60 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 355.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 355.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 355.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 355.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "3cc3bb4b-17fa-585f-8afd-9a34b98a3a33"))
+		(pin "2" (uuid "4ce2e847-3966-504b-8eee-f5da38fc5c2c"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R15") (unit 1))))
+	)
+	(wire (pts (xy 351.79 190.50) (xy 349.25 190.50)) (stroke (width 0) (type default)) (uuid "79ca389e-c887-566f-a385-5d5a666113de"))
+	(label "LED+" (at 349.25 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1b293313-06a4-5109-be20-d6740df7e7d1"))
+	(wire (pts (xy 359.41 190.50) (xy 361.95 190.50)) (stroke (width 0) (type default)) (uuid "23f153a9-0b51-55b8-93b7-35efd432db97"))
+	(label "LED-" (at 361.95 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8698ecca-d6ad-518b-9904-059b63df6d53"))
+	(symbol (lib_id "Device:C") (at 406.40 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "cd9b7f03-210c-55d1-9705-4022d53aac1f")
+		(property "Reference" "C5" (at 406.40 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 406.40 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 406.40 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 406.40 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 406.40 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 406.40 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "79ddc945-0cf6-5ae8-97c8-4f33adb4acf2"))
+		(pin "2" (uuid "a5ad5f99-f809-54b8-9947-4d92472734f2"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C5") (unit 1))))
+	)
+	(wire (pts (xy 402.59 190.50) (xy 400.05 190.50)) (stroke (width 0) (type default)) (uuid "03649fcc-ebe5-58ff-9421-dbd45c7cb418"))
+	(label "LED-" (at 400.05 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "866e3676-c6c9-53c7-8a9d-3cfe039c28ff"))
+	(wire (pts (xy 410.21 190.50) (xy 412.75 190.50)) (stroke (width 0) (type default)) (uuid "8167319e-f0fa-566e-bd61-015219b21ded"))
+	(label "N-C5-2" (at 412.75 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "db41ae87-9d7e-5c24-af07-f5d68347b762"))
+	(symbol (lib_id "Device:R") (at 457.20 190.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "9e0789e6-386a-5b48-a804-b8781e5eb511")
+		(property "Reference" "R13" (at 457.20 187.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 457.20 193.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 457.20 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 457.20 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 457.20 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 457.20 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "715a8d2f-a26e-5036-b59c-542ed0320864"))
+		(pin "2" (uuid "e5e9b3c2-5a5c-5006-a229-2f51943960d8"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R13") (unit 1))))
+	)
+	(wire (pts (xy 453.39 190.50) (xy 450.85 190.50)) (stroke (width 0) (type default)) (uuid "0b79e31f-2b3d-5605-918f-fd928286746e"))
+	(label "N-C5-2" (at 450.85 190.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b8b8f7d1-d734-57d0-b0ff-99a67241930a"))
+	(wire (pts (xy 461.01 190.50) (xy 463.55 190.50)) (stroke (width 0) (type default)) (uuid "8ea24fe9-80b7-5bae-b21c-ae9115c8ec08"))
+	(label "N-D8-2" (at 463.55 190.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f1d7fb9d-2d0d-54a5-a293-cec0110e4962"))
+	(text "Controlador U1 y arranque" (exclude_from_sim no) (at 35.56 271.78 0) (effects (font (size 2.0 2.0) (bold yes)) (justify left bottom)) (uuid "edc40f23-3d3e-54fc-9b37-7e4fb2860e7a"))
+	(symbol (lib_id "Lampara:IC_SOT-23-6") (at 45.72 292.10 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "a6b6be46-c814-5d68-9f5d-7ce70ce84ddf")
+		(property "Reference" "U1" (at 45.72 285.75 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "H0TN 9L99 ? (flyback)" (at 45.72 298.45 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 45.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Controlador flyback SOT-23-6, marca 'H0TN / 9L99' (o SL87), fabricante no identificado. Pin 1 = punto, esquina inferior izquierda viendo la placa con el cuello abajo" (at 45.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "37a606e6-df6f-5518-be7a-b3463b01b3f1"))
+		(pin "2" (uuid "67877316-0bc0-50ee-83ff-361026e4072c"))
+		(pin "3" (uuid "a149aa9b-64a7-5b1e-b978-db4c779015c2"))
+		(pin "4" (uuid "3df6f3b8-c8d2-5d95-8fb8-26e7635a84e9"))
+		(pin "5" (uuid "8cfc2e30-6952-57e0-a639-2b9de27fce95"))
+		(pin "6" (uuid "c30d3258-2fdc-598c-935d-91ed071f46b4"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "U1") (unit 1))))
+	)
+	(wire (pts (xy 35.56 289.56) (xy 33.02 289.56)) (stroke (width 0) (type default)) (uuid "d73e4602-b6e7-5c39-89b6-d2321817ecb3"))
+	(label "VCC" (at 33.02 289.56 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4bf8ee80-c914-5e84-847d-c4e393c90a4f"))
+	(wire (pts (xy 35.56 292.10) (xy 33.02 292.10)) (stroke (width 0) (type default)) (uuid "b3253233-6254-57fb-92d0-354e8fc7e781"))
+	(label "GND_CI" (at 33.02 292.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4c9b2c14-2d58-5385-8b09-296b52eb588a"))
+	(wire (pts (xy 35.56 294.64) (xy 33.02 294.64)) (stroke (width 0) (type default)) (uuid "26658124-34df-5858-8be9-a8951e237550"))
+	(label "COMPUERTA_CI" (at 33.02 294.64 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a7b0a765-ff11-5f05-8c0e-39e1b88d1cf3"))
+	(wire (pts (xy 55.88 294.64) (xy 58.42 294.64)) (stroke (width 0) (type default)) (uuid "2e381f3e-57cc-52f5-a3f7-251f2e8fc143"))
+	(label "FB" (at 58.42 294.64 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6a5d21ab-fd4c-5fbc-8a9d-4704727cfdd3"))
+	(wire (pts (xy 55.88 292.10) (xy 58.42 292.10)) (stroke (width 0) (type default)) (uuid "7b16d321-54c9-5116-8ac0-5f79cfcc6f98"))
+	(label "CS" (at 58.42 292.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4c8f31be-8f46-50eb-a6dc-0dcfe1f01227"))
+	(wire (pts (xy 55.88 289.56) (xy 58.42 289.56)) (stroke (width 0) (type default)) (uuid "9df97bf0-97d7-5325-b7fe-68d4b483a4ae"))
+	(label "U1_PIN6" (at 58.42 289.56 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "da5572fb-c70d-5f5b-af78-ac622c4e0bd1"))
+	(symbol (lib_id "Device:C_Polarized") (at 96.52 292.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "96574310-4711-55e3-9c7b-bf94ae8ad49e")
+		(property "Reference" "CE2" (at 96.52 289.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10uF 50V" (at 96.52 294.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (at 96.52 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Electrolítico pequeño; polaridad deducida de la continuidad con U1 (+ = VCC)" (at 96.52 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Superior (THT)" (at 96.52 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "11f65669-63de-51f8-83a5-3598e5da0da0"))
+		(pin "2" (uuid "8ab45e91-052b-59e3-8721-463cec496f13"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "CE2") (unit 1))))
+	)
+	(wire (pts (xy 92.71 292.10) (xy 90.17 292.10)) (stroke (width 0) (type default)) (uuid "2d58c518-664b-5dac-9278-4548c87de54c"))
+	(label "GND_CI" (at 90.17 292.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6db49bd6-600d-5e93-9778-68baa1149aa9"))
+	(wire (pts (xy 100.33 292.10) (xy 102.87 292.10)) (stroke (width 0) (type default)) (uuid "ee014884-2a32-5da2-9a19-2ce593682551"))
+	(label "VCC" (at 102.87 292.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "76c42aa5-6916-52f6-9c5d-be459f108474"))
+	(symbol (lib_id "Device:C") (at 147.32 292.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "a25c5d83-dc63-5070-9359-ddbfa65dcd99")
+		(property "Reference" "C2" (at 147.32 289.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "? (MLCC)" (at 147.32 294.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 147.32 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 147.32 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 147.32 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6bd1c2f6-9c37-516d-89b7-0e1fe69c5d28"))
+		(pin "2" (uuid "f9cdbfca-a52c-5d3b-9ec7-ed2cea9790d1"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C2") (unit 1))))
+	)
+	(wire (pts (xy 143.51 292.10) (xy 140.97 292.10)) (stroke (width 0) (type default)) (uuid "bdd25464-2a4b-5316-88fb-75bc426ff01d"))
+	(label "VCC" (at 140.97 292.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fdef703b-3d97-5423-a91c-684864c33d1b"))
+	(symbol (lib_id "Device:C") (at 198.12 292.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes)
+		(uuid "9ebaa74e-14b0-570b-84ad-fd399e790036")
+		(property "Reference" "C1" (at 198.12 289.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "(no montado)" (at 198.12 294.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 198.12 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Posición aproximada (junto a U1)" (at 198.12 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 198.12 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9780630e-59ae-51ff-bb90-68d4b701d8b7"))
+		(pin "2" (uuid "8c2ffc3e-72d3-5d81-88ff-9e0846a2309d"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C1") (unit 1))))
+	)
+	(symbol (lib_id "Device:R") (at 248.92 292.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "bdad556c-6d16-5807-a7bb-1bb38ca38d24")
+		(property "Reference" "R4" (at 248.92 289.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "330k (334)" (at 248.92 294.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 248.92 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 248.92 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 248.92 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 248.92 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "675fd9f5-69e5-50c8-acdf-19d03c90a347"))
+		(pin "2" (uuid "d912be97-da3d-5a54-8c32-9916692bb81a"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R4") (unit 1))))
+	)
+	(wire (pts (xy 245.11 292.10) (xy 242.57 292.10)) (stroke (width 0) (type default)) (uuid "81573fb8-0d77-5bb4-bb4b-e34f72573a32"))
+	(label "N-R4-1" (at 242.57 292.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "26dd3818-ed77-51d9-b6f6-be317a29fdbc"))
+	(wire (pts (xy 252.73 292.10) (xy 255.27 292.10)) (stroke (width 0) (type default)) (uuid "c8216c82-91f9-5f9a-b815-4ffc93db2443"))
+	(label "DC+" (at 255.27 292.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3c600a53-4a36-599d-8d37-b8e0def2c648"))
+	(symbol (lib_id "Device:R") (at 299.72 292.10 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "139f575f-d2b1-574d-8603-a76e358b9762")
+		(property "Reference" "R5" (at 299.72 289.56 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "330k (334)" (at 299.72 294.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 299.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 299.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 299.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 299.72 292.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ab74a09c-22aa-5de0-a908-110e7b5f80c6"))
+		(pin "2" (uuid "4cda9608-afb2-5177-9544-f8f5f398348c"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R5") (unit 1))))
+	)
+	(wire (pts (xy 295.91 292.10) (xy 293.37 292.10)) (stroke (width 0) (type default)) (uuid "d55643a2-5893-5b13-81ef-b4295d85d297"))
+	(label "N-R4-1" (at 293.37 292.10 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3ab34c32-31d4-5904-a7a6-34178c9cf582"))
+	(wire (pts (xy 303.53 292.10) (xy 306.07 292.10)) (stroke (width 0) (type default)) (uuid "26a39939-b692-51f9-88f5-2d8710805541"))
+	(label "VCC" (at 306.07 292.10 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "410f8258-ed5b-5242-bd79-a08ed9a70957"))
+	(symbol (lib_id "Device:R") (at 45.72 317.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "24556043-88d2-5edc-9e42-ca613b1d4068")
+		(property "Reference" "R7" (at 45.72 314.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22 (220)" (at 45.72 320.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 45.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 45.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1281f1a6-9f74-5252-bdd8-ae2af1b856d2"))
+		(pin "2" (uuid "3b90e38a-85c7-5349-b560-4757c0eb4e67"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R7") (unit 1))))
+	)
+	(wire (pts (xy 41.91 317.50) (xy 39.37 317.50)) (stroke (width 0) (type default)) (uuid "33c9c705-2f58-5ac1-9604-10d903c6c9fc"))
+	(label "COMPUERTA_CI" (at 39.37 317.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2acc7adc-6971-544b-ae3a-20e54c608bb6"))
+	(wire (pts (xy 49.53 317.50) (xy 52.07 317.50)) (stroke (width 0) (type default)) (uuid "6ad6d661-bf6a-5d31-83f5-b23e27fd9ca9"))
+	(label "COMPUERTA_Q1" (at 52.07 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a971a711-5fc1-5ef8-870d-b25ec8ec51f2"))
+	(symbol (lib_id "Device:R") (at 96.52 317.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "73f27678-08b3-5683-bc60-4a1de2f27154")
+		(property "Reference" "R8" (at 96.52 314.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "75k (753)" (at 96.52 320.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 96.52 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 96.52 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 96.52 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "afc2d2b4-2f61-59a9-b8db-383ae98dbdd5"))
+		(pin "2" (uuid "6d201a8f-9cc2-527e-9427-feafa59ba791"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R8") (unit 1))))
+	)
+	(wire (pts (xy 92.71 317.50) (xy 90.17 317.50)) (stroke (width 0) (type default)) (uuid "bf817b06-50f5-5f18-ab0b-b21721e793a6"))
+	(label "GND_CI" (at 90.17 317.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6ef07af8-70db-5bf4-b183-eb522f00245f"))
+	(wire (pts (xy 100.33 317.50) (xy 102.87 317.50)) (stroke (width 0) (type default)) (uuid "60dbfbcf-2301-5a27-ab48-798f2086286a"))
+	(label "COMPUERTA_CI" (at 102.87 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fcff6290-7600-56fe-9775-ce107aad3063"))
+	(symbol (lib_id "Device:D") (at 147.32 317.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "b739e837-9c7c-5b83-8a7c-6f28bc861a6e")
+		(property "Reference" "D6" (at 147.32 313.69 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "1N4148W ? (T4)" (at 147.32 321.31 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Diode_SMD:D_SOD-123" (at 147.32 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 147.32 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 147.32 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9648c7c9-9149-5fab-9d92-241c87579111"))
+		(pin "2" (uuid "04afb822-542a-5987-96a4-3593ec007be4"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "D6") (unit 1))))
+	)
+	(wire (pts (xy 143.51 317.50) (xy 140.97 317.50)) (stroke (width 0) (type default)) (uuid "f7b93581-1079-5364-b301-6f6bd365f030"))
+	(label "COMPUERTA_CI" (at 140.97 317.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "78c6cadb-346c-5ed0-b948-ed49089a4e01"))
+	(wire (pts (xy 151.13 317.50) (xy 153.67 317.50)) (stroke (width 0) (type default)) (uuid "d646d597-ae26-5db4-96bd-82a22524f2d7"))
+	(label "COMPUERTA_Q1" (at 153.67 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "90ae4229-8161-5fb0-b231-62d31decf666"))
+	(symbol (lib_id "Device:R") (at 198.12 317.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "4dc6a799-d200-5856-b4c1-5d420a6e72b3")
+		(property "Reference" "R9" (at 198.12 314.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "12k (123)" (at 198.12 320.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 198.12 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 198.12 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 198.12 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 198.12 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d8b9ce99-e384-5794-9475-558a8ab87aa1"))
+		(pin "2" (uuid "78a57d79-4858-550f-b723-a95af5913f06"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R9") (unit 1))))
+	)
+	(wire (pts (xy 194.31 317.50) (xy 191.77 317.50)) (stroke (width 0) (type default)) (uuid "bae8901f-edc9-5667-a87a-fc651efca54c"))
+	(label "FB" (at 191.77 317.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b161e86f-d9f8-5557-b2ed-c052de50c75a"))
+	(wire (pts (xy 201.93 317.50) (xy 204.47 317.50)) (stroke (width 0) (type default)) (uuid "c39a76f9-0e61-5640-b196-0d50b8422f7f"))
+	(label "U1_PIN6" (at 204.47 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "95a3f3a7-870b-5d9c-b053-84c693efa43d"))
+	(symbol (lib_id "Device:R") (at 248.92 317.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "caf8ae61-b4d2-576f-afee-6e8548a8a4ec")
+		(property "Reference" "R10" (at 248.92 314.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "560 (561)" (at 248.92 320.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 248.92 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 248.92 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 248.92 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 248.92 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a3e10df5-b59b-5e4a-9cf0-1c27919d5c92"))
+		(pin "2" (uuid "2bf26f83-243b-56bc-b4b0-df0272ec8325"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R10") (unit 1))))
+	)
+	(wire (pts (xy 245.11 317.50) (xy 242.57 317.50)) (stroke (width 0) (type default)) (uuid "ff0a20cf-d19e-5363-9c3c-77ab36a1e1ad"))
+	(label "CS" (at 242.57 317.50 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "797b1033-897b-52ab-aa49-81d671453b47"))
+	(wire (pts (xy 252.73 317.50) (xy 255.27 317.50)) (stroke (width 0) (type default)) (uuid "88bf2f79-97dc-5150-a290-dbbef428fbe3"))
+	(label "N-C4-1" (at 255.27 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "937c9584-aded-5ea3-b969-6da3c08efd5d"))
+	(symbol (lib_id "Device:R") (at 299.72 317.50 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "b6068257-5c6f-584f-a71c-3fe92f909ca9")
+		(property "Reference" "R11" (at 299.72 314.96 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "68k (683)" (at 299.72 320.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 299.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 299.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 299.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 299.72 317.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f8a7c690-3130-550e-b146-7fb99d9f9a97"))
+		(pin "2" (uuid "e7a2047d-64ce-599c-a38b-8d2719499f8e"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R11") (unit 1))))
+	)
+	(wire (pts (xy 303.53 317.50) (xy 306.07 317.50)) (stroke (width 0) (type default)) (uuid "2e1ee717-db96-5562-b328-7ff20321d01f"))
+	(label "FB" (at 306.07 317.50 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5d6a15c7-1ddd-5cb9-a40a-a9875c551b08"))
+	(symbol (lib_id "Device:R") (at 45.72 342.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "a5517037-eaa3-5300-b0f5-0c64fa919aaf")
+		(property "Reference" "R12" (at 45.72 340.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0" (at 45.72 345.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 45.72 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 45.72 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Puente de 0 ohm" (at 45.72 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 45.72 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9f18ca2e-fe8e-5c00-9046-4c2d53a0e071"))
+		(pin "2" (uuid "dca0625e-10cd-5295-aaca-253773e51fc7"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "R12") (unit 1))))
+	)
+	(wire (pts (xy 41.91 342.90) (xy 39.37 342.90)) (stroke (width 0) (type default)) (uuid "5c1e98ec-f814-5511-bd55-6d04dd91c65a"))
+	(label "N-R12-1" (at 39.37 342.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "37cb5358-1d1a-52f4-ad3d-a5439c730c47"))
+	(wire (pts (xy 49.53 342.90) (xy 52.07 342.90)) (stroke (width 0) (type default)) (uuid "38502947-8aba-550f-8dcd-3fcc8682b22e"))
+	(label "U1_PIN6" (at 52.07 342.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e914683-acfc-5c38-8a97-2b9a6298c147"))
+	(symbol (lib_id "Device:C") (at 96.52 342.90 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "b583442b-71f7-5cb7-8827-309f17f4611d")
+		(property "Reference" "C4" (at 96.52 340.36 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "? (MLCC)" (at 96.52 345.44 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 96.52 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 96.52 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "" (at 96.52 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Lado" "Inferior (SMD)" (at 96.52 342.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a287968f-e492-5d9b-9937-719cc096352e"))
+		(pin "2" (uuid "49eeb032-16fa-5511-be23-84d77d17a255"))
+		(instances (project "KiCad_IngenieriaInversaLampara" (path "/5310957d-6bba-5a90-941c-aee73197b857" (reference "C4") (unit 1))))
+	)
+	(wire (pts (xy 92.71 342.90) (xy 90.17 342.90)) (stroke (width 0) (type default)) (uuid "b0dd1c7c-b9be-54c5-a639-40096b8f6dce"))
+	(label "N-C4-1" (at 90.17 342.90 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "62a9249b-1466-5f16-9f02-a6cea356e545"))
+	(wire (pts (xy 100.33 342.90) (xy 102.87 342.90)) (stroke (width 0) (type default)) (uuid "e37c0319-1e45-5231-a960-dba568df61d9"))
+	(label "U1_PIN6" (at 102.87 342.90 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0a2df92b-c253-5579-9dc5-0441657c9359"))
+	(text "ESQUEMATICO RECONSTRUIDO por ingenieria inversa de la PCB JT047-V1 (2018-3-19).\nConexiones: cobre de la cara inferior segmentado a partir de fotos + mediciones de continuidad (ver prompts/ y processed_images/). Cada etiqueta de red = una red de la PCB.\nValores con '?' no legibles. DNP = pads presentes sin componente. Pines sin etiqueta: conexion no determinada." (exclude_from_sim no) (at 25.40 25.40 0) (effects (font (size 1.5 1.5)) (justify left bottom)) (uuid "150b629c-6c8f-5c25-bf98-198b20cdcc99"))
+	(sheet_instances (path "/" (page "1")))
+)

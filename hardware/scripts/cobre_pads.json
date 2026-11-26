@@ -1,0 +1,1351 @@
+[
+ {
+  "ref": "L1",
+  "lado": "F",
+  "fp": "L_Radial_D12.5mm_P7.00mm_Fastron_09HCP",
+  "pads": [
+   {
+    "num": "1",
+    "x": 104.772588,
+    "y": 81.904941,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 111.772588,
+    "y": 81.904941,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "F1",
+  "lado": "F",
+  "fp": "R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+  "pads": [
+   {
+    "num": "1",
+    "x": 126.419597,
+    "y": 60.50343,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 127.562348,
+    "y": 65.45323,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "VR2",
+  "lado": "F",
+  "fp": "VR2_Ovalo_P7.5mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 132.487882,
+    "y": 68.251294,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 131.117882,
+    "y": 75.451294,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "J1",
+  "lado": "F",
+  "fp": "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+  "pads": [
+   {
+    "num": "1",
+    "x": 120.0,
+    "y": 144.586352,
+    "w": 1.7,
+    "h": 2.0,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 122.5,
+    "y": 144.586352,
+    "w": 1.7,
+    "h": 2.0,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "VR1",
+  "lado": "F",
+  "fp": "RV_Disc_D7mm_W3.4mm_P5mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 118.923352,
+    "y": 65.388235,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 124.089446,
+    "y": 65.349843,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "C6",
+  "lado": "F",
+  "fp": "C_Rect_L19.0mm_W9.0mm_P15.00mm_MKS4",
+  "pads": [
+   {
+    "num": "1",
+    "x": 117.721124,
+    "y": 96.477028,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 102.723408,
+    "y": 96.738814,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "R1",
+  "lado": "F",
+  "fp": "R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+  "pads": [
+   {
+    "num": "1",
+    "x": 116.569003,
+    "y": 60.600484,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 115.426252,
+    "y": 65.550284,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "VR3",
+  "lado": "F",
+  "fp": "RV_Disc_D12mm_W4.2mm_P7.5mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 129.029966,
+    "y": 90.811222,
+    "w": 1.8,
+    "h": 1.8,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 127.527778,
+    "y": 98.338585,
+    "w": 1.8,
+    "h": 1.8,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "Q1",
+  "lado": "F",
+  "fp": "TO-220F-3_Vertical",
+  "pads": [
+   {
+    "num": "1",
+    "x": 132.534705,
+    "y": 108.653882,
+    "w": 2.0,
+    "h": 1.905,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 132.534705,
+    "y": 111.193882,
+    "w": 2.0,
+    "h": 1.905,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "3",
+    "x": 132.534705,
+    "y": 113.733882,
+    "w": 2.0,
+    "h": 1.905,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "CE3",
+  "lado": "F",
+  "fp": "CP_Radial_D13.0mm_P5.00mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 108.121373,
+    "y": 142.67306,
+    "w": 2.482296,
+    "h": 2.482296,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 108.295871,
+    "y": 137.676106,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "T1",
+  "lado": "F",
+  "fp": "T1_EE_4pin",
+  "pads": [
+   {
+    "num": "1",
+    "x": 104.17047,
+    "y": 111.849647,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 104.17047,
+    "y": 126.849647,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "3",
+    "x": 116.17047,
+    "y": 116.549647,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "4",
+    "x": 116.17047,
+    "y": 126.749647,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "CE2",
+  "lado": "F",
+  "fp": "CP_Radial_D5.0mm_P2.50mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.192458,
+    "y": 107.156906,
+    "w": 1.707712,
+    "h": 1.707712,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 123.018067,
+    "y": 104.662996,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "CE4",
+  "lado": "F",
+  "fp": "CP_Radial_D13.0mm_P5.00mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 134.58647,
+    "y": 141.905647,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 134.58647,
+    "y": 136.905647,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "P1",
+  "lado": "F",
+  "fp": "P1_Entrada_AC_Cables",
+  "pads": [
+   {
+    "num": "1",
+    "x": 125.85,
+    "y": 54.2,
+    "w": 2.2,
+    "h": 2.2,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "1",
+    "x": 126.05,
+    "y": 56.9,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 117.65,
+    "y": 57.0,
+    "w": 2.6,
+    "h": 2.6,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 118.85,
+    "y": 54.2,
+    "w": 2.2,
+    "h": 2.2,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "LF1",
+  "lado": "F",
+  "fp": "LF1_CMC_4pin_7.5x4.5mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 117.653882,
+    "y": 70.062941,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 117.653882,
+    "y": 74.562941,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "3",
+    "x": 125.153882,
+    "y": 70.062941,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "4",
+    "x": 125.153882,
+    "y": 74.562941,
+    "w": 2.0,
+    "h": 2.0,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "D8",
+  "lado": "F",
+  "fp": "D_DO-201AD_P5.08mm_Vertical_KathodeUp",
+  "pads": [
+   {
+    "num": "1",
+    "x": 137.897208,
+    "y": 129.37749,
+    "w": 3.30973,
+    "h": 3.30973,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 138.074498,
+    "y": 124.300585,
+    "w": 3.2,
+    "h": 3.2,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "CX1",
+  "lado": "F",
+  "fp": "C_Rect_L19.0mm_W8.0mm_P15.00mm_MKS4",
+  "pads": [
+   {
+    "num": "1",
+    "x": 121.446582,
+    "y": 82.507538,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   },
+   {
+    "num": "2",
+    "x": 136.444297,
+    "y": 82.245752,
+    "w": 2.4,
+    "h": 2.4,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "CE1",
+  "lado": "F",
+  "fp": "CP_Radial_D8.0mm_P3.50mm",
+  "pads": [
+   {
+    "num": "1",
+    "x": 137.298328,
+    "y": 95.388744,
+    "w": 1.979038,
+    "h": 1.979038,
+    "tht": true,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 138.263059,
+    "y": 92.024328,
+    "w": 1.6,
+    "h": 1.6,
+    "tht": true,
+    "redonda": true
+   }
+  ]
+ },
+ {
+  "ref": "D1",
+  "lado": "B",
+  "fp": "D_SMA",
+  "pads": [
+   {
+    "num": "1",
+    "x": 124.019882,
+    "y": 88.727529,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 124.019882,
+    "y": 92.727529,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R3",
+  "lado": "B",
+  "fp": "R_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 133.252823,
+    "y": 95.538382,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 133.252823,
+    "y": 93.713382,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R5",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 114.042558,
+    "y": 103.961411,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 116.967558,
+    "y": 103.961411,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R8",
+  "lado": "B",
+  "fp": "R_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 125.261735,
+    "y": 103.961411,
+    "w": 1.025,
+    "h": 1.4,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 127.086735,
+    "y": 103.961411,
+    "w": 1.025,
+    "h": 1.4,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R2",
+  "lado": "B",
+  "fp": "R_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 133.355411,
+    "y": 89.588264,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 133.355411,
+    "y": 87.763264,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "U1",
+  "lado": "B",
+  "fp": "SOT-23-6",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.788,
+    "y": 115.134499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 124.738,
+    "y": 115.134499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "3",
+    "x": 125.688,
+    "y": 115.134499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "4",
+    "x": 125.688,
+    "y": 117.409499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "5",
+    "x": 124.738,
+    "y": 117.409499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "6",
+    "x": 123.788,
+    "y": 117.409499,
+    "w": 0.6,
+    "h": 1.325,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R12",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 118.659029,
+    "y": 118.221176,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 121.584029,
+    "y": 118.221176,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D5",
+  "lado": "B",
+  "fp": "D_MiniMELF",
+  "pads": [
+   {
+    "num": "1",
+    "x": 139.408117,
+    "y": 102.223411,
+    "w": 1.7,
+    "h": 1.3,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 139.408117,
+    "y": 98.723411,
+    "w": 1.7,
+    "h": 1.3,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "C5",
+  "lado": "B",
+  "fp": "C_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 132.84247,
+    "y": 133.955941,
+    "w": 1.8,
+    "h": 1.15,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 132.84247,
+    "y": 131.005941,
+    "w": 1.8,
+    "h": 1.15,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "RS2",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.685852,
+    "y": 125.197176,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 126.610852,
+    "y": 125.197176,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D3",
+  "lado": "B",
+  "fp": "D_SMA",
+  "pads": [
+   {
+    "num": "1",
+    "x": 109.760117,
+    "y": 92.932705,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 109.760117,
+    "y": 88.932705,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R14",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 131.714,
+    "y": 141.53497,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 131.714,
+    "y": 138.60997,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R10",
+  "lado": "B",
+  "fp": "R_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 131.006676,
+    "y": 120.991058,
+    "w": 1.025,
+    "h": 1.4,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 132.831676,
+    "y": 120.991058,
+    "w": 1.025,
+    "h": 1.4,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D6",
+  "lado": "B",
+  "fp": "D_SOD-123",
+  "pads": [
+   {
+    "num": "1",
+    "x": 129.756235,
+    "y": 103.756235,
+    "w": 0.9,
+    "h": 1.2,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 133.056235,
+    "y": 103.756235,
+    "w": 0.9,
+    "h": 1.2,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "C2",
+  "lado": "B",
+  "fp": "C_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 122.583647,
+    "y": 111.887411,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 122.583647,
+    "y": 109.987411,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R11",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.788441,
+    "y": 120.991058,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 126.713441,
+    "y": 120.991058,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R15",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 111.811882,
+    "y": 141.329794,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 111.811882,
+    "y": 138.404794,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D7",
+  "lado": "B",
+  "fp": "D_SMA",
+  "pads": [
+   {
+    "num": "1",
+    "x": 109.452352,
+    "y": 112.527058,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 109.452352,
+    "y": 108.527058,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R6",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 113.93997,
+    "y": 107.859764,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 116.86497,
+    "y": 107.859764,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R4",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 114.247735,
+    "y": 99.344941,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 117.172735,
+    "y": 99.344941,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "RS4",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.685852,
+    "y": 133.301647,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 126.610852,
+    "y": 133.301647,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D2",
+  "lado": "B",
+  "fp": "D_SMA",
+  "pads": [
+   {
+    "num": "1",
+    "x": 117.762,
+    "y": 92.727529,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 117.762,
+    "y": 88.727529,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R7",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 130.046323,
+    "y": 106.115764,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 132.971323,
+    "y": 106.115764,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R13",
+  "lado": "B",
+  "fp": "R_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 133.047647,
+    "y": 127.238147,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 133.047647,
+    "y": 125.413147,
+    "w": 1.4,
+    "h": 1.025,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "C1",
+  "lado": "B",
+  "fp": "C_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 120.839647,
+    "y": 115.990941,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 120.839647,
+    "y": 114.090941,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "RS1",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.788441,
+    "y": 127.967058,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 126.713441,
+    "y": 127.967058,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "RS3",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 123.788441,
+    "y": 130.634352,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 126.713441,
+    "y": 130.634352,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "D4",
+  "lado": "B",
+  "fp": "D_SMA",
+  "pads": [
+   {
+    "num": "1",
+    "x": 103.502235,
+    "y": 88.932705,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 103.502235,
+    "y": 92.932705,
+    "w": 1.8,
+    "h": 2.5,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "C3",
+  "lado": "B",
+  "fp": "C_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 139.510705,
+    "y": 114.874529,
+    "w": 1.8,
+    "h": 1.15,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 139.510705,
+    "y": 111.924529,
+    "w": 1.8,
+    "h": 1.15,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "RL1",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 106.656205,
+    "y": 79.237647,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 109.581205,
+    "y": 79.237647,
+    "w": 1.125,
+    "h": 1.75,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "R9",
+  "lado": "B",
+  "fp": "R_1206_3216Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 129.046705,
+    "y": 118.144852,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 129.046705,
+    "y": 115.219852,
+    "w": 1.75,
+    "h": 1.125,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ },
+ {
+  "ref": "C4",
+  "lado": "B",
+  "fp": "C_0805_2012Metric",
+  "pads": [
+   {
+    "num": "1",
+    "x": 133.047647,
+    "y": 118.658235,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   },
+   {
+    "num": "2",
+    "x": 133.047647,
+    "y": 116.758235,
+    "w": 1.45,
+    "h": 1.0,
+    "tht": false,
+    "redonda": false
+   }
+  ]
+ }
+]
